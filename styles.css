@@ -1,0 +1,324 @@
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.grid img,
+.graphics_works img {
+    transition: transform 0.3s ease;
+}
+
+.grid img:hover,
+.graphics_works img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.links{
+    text-align: left;
+    font-size: larger;
+    font-family: fantasy;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+
+.services ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffd700;
+    padding-left: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.name{
+    border-bottom: 10px dotted pink;
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+    color: blanchedalmond;
+    background-color: #ffd700;
+    
+}
+
+.profile_pic{
+    border-radius: 50%;
+    height: 300px;
+    width: 200px;
+    display: block; margin: auto;
+    padding-bottom: 20px;
+}
+
+.info{
+    text-align: center;
+    color: beige;
+}
+
+#works{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blanchedalmond;
+    background-color: #ffd700;
+    border-bottom: 3px dotted white;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-auto-rows: auto;
+    gap: 50px;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 58px;
+}
+
+.grid img{
+    width: 100%;
+    height: auto
+}
+
+#text{
+    text-align: center;
+    color: bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#head1{
+    color: white;
+    text-align: center;
+    background-color:#ffd700;
+}
+
+#whatsapp{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.contact_us {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    color: blanchedalmond;
+    padding: 20px;
+    margin-top: 30px;
+
+}
+
+.contact_us table{
+    margin: auto;
+}
+
+#head2{
+    background-color: chocolate;
+}
+
+#head3{
+    text-align: center;
+    color: rgb(245, 153, 16);
+    background-color: yellow;
+    border-bottom: 2px dotted;
+}
+
+.information {
+    font-size: 30px;
+    color: blanchedalmond;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* ✅ Center form elements horizontally */
+    gap: 20px;
+    text-align: center;      /* ✅ Center text inside elements like <label> */
+}
+
+.form input,
+.form button {
+    text-align: center;      /* ✅ Center text inside input fields */
+    font-size: 20px;
+    padding: 8px 12px;
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Button hover effect */
+.form input[type="submit"]:hover {
+    background-color: #ff69b4;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Link hover effects */
+.links a {
+    color: #ffd700;
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+}
+
+.links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Typography consistency */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Responsive image grid */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .form input,
+    .form textarea {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    .profile_pic {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+#head4{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #ffee00;
+}
+
+.services ul{
+    margin-left: 30px;
+    color: bisque;
+    margin-top: 30px;
+}
+
+.head5{
+    color: bisque;
+    margin-left: 30px;
+}
+
+#head6{
+    color: blanchedalmond;
+    margin-left: 30px;
+}
+
+.graphics_works{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-auto-rows: auto;
+    gap: 50px;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 58px;
+}
+
+.graphics_works img{
+    width: 100%;
+    height: auto;
+}
+
+input[type="submit"] {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffa500;
+    color: white;
+}
+
+section {
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#graphics_works{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blanchedalmond;
+    background-color: #ffd700;
+    border-bottom: 3px dotted white;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#taambi {
+    padding-top: 50px;
+    display: block;
+    margin: auto;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+#taambi:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.image3{
+    float: right;
+    width: 35%;
+    height: 35%;
+    margin-top: 100px;
+    margin-right: 30px;
+}
+
+.gfx{
+    float: right;
+    width: 30%;
+    height: 30%;
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+
+.footer {
+    text-align: center;
+    color: #fff;
+    background-color: #f9fd07;
+    padding: 20px;
+    font-size: 14px;
+}
+
